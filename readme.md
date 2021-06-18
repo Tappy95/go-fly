@@ -1,4 +1,11 @@
 # go-fly
+
+sudo docker build -t go-fly-kf:v3 .
+sudo docker tag 0727 ccr.ccs.tencentyun.com/sea_of_stars/go-fly-kf:v3 &
+sudo docker push ccr.ccs.tencentyun.com/sea_of_stars/go-fly-kf:v3 &
+sudo docker image rm 0727 -f
+
+
 基于Golang语言和MySQL实现的WEB在线客服系统
 
 主要技术栈
